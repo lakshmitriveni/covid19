@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    
+    <!-- Bootstrap CSS -->
+    <link
+      rel="stylesheet"
+      href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css"
+    />
+
+    <!-- Bootstrap JS -->
+    <script src="https://code.jquery.com/jquery-3.4.1.js"></script>
+    <!-- Uncompressed jQuery -->
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"></script>
+
+    <!-- Font Awesome -->
+    <script
+      src="https://kit.fontawesome.com/996973c893.js"
+      crossorigin="anonymous"
+    ></script>
+
+    <!-- Google Fonts -->
+    <link
+      href="https://fonts.googleapis.com/css2?family=Baloo+Thambi+2:wght@400;500;600;700;800&display=swap"
+      rel="stylesheet"
+    />
+
+    <!-- My Stylesheet -->
+    <link rel="stylesheet" href="style.css" />
+
+    <!-- My jQuery -->
+    <script src="info.js"></script>
+
+    <!-- Chart.js (Working CDN) -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.9.3/Chart.min.js"></script>
+
+    <title>Covid-19 Information</title>
+  </head>
+  <body>
+    <!-- Main Title and  Sub-heading -->
+    <div class="container-fluid bg-light p-5 text-center my-3">
+      <h1 class="" style="color:blue" >Covid-19 Information</h1>
+     </div>
+     
+
+    <!-- Total number of confirmed and all the other info -->
+    <div class="container my-5">
+      <div class="row text-center">
+          <img src="https://cdn.pixabay.com/photo/2020/02/04/07/16/coronavirus-4817450_1280.jpg"/>
+         <div class="col-3 text-warning"><br>
+          <h5>Positive</h5>
+          <p id="confirmed"></p>
+          </div>
+       
+        <div class="col-3 text-success"><br>
+          <h5>Recovered</h5>
+          <p id = "recovered"></p>
+        </div>
+        <div class="col-3 text-danger"><br>
+          <h5>Deaths</h5>
+          <p id="deaths"></p>
+        </div>
+      </div>
+    </div>
+    </div>
+
+    <!-- Quote -->
+    <div class="container bg-light p-3 my-5 text-center">
+      
+    </div>
+
+    <!-- Used by Chart.js -->
+    <div class="container my-5">
+  <canvas id="myChart"></canvas>
+  <div></div>
+  <div class="container my-5">
+    <canvas id="myChart1"></canvas>
+    </div>
+    <div class="container my-5">
+    <canvas id="myChart2"></canvas>
+</div>
+<div class="container my-5">
+  <canvas id="myChart3"></canvas>
+</div>
+    <!-- Bottom Note -->
+    <div class="container text-center my-5">
+      <h6 class="text-info">
+        *Click on the Confirmed/Recovered/Deaths buttons above to see the chart
+        individually.*
+      </h6>
+    </div>
+
+    <!-- Footer -->
+    <footer class="footer mt-5 py-3 bg-light">
+      <div class="container text-center">
+      
+      </div>
+    </footer>
+  </body>
+</html>
